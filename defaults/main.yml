@@ -22,6 +22,9 @@ netdata_config: true
 # Defines location of Netdata configuration file
 netdata_config_file: /etc/netdata/netdata.conf
 
+# Defines template of Netdata configuration file
+netdata_config_template: netdata.conf.j2
+
 # Defines pre-requisites for Debian systems
 netdata_debian_pre_reqs:
   - autoconf-archive

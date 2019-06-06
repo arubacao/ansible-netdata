@@ -1,7 +1,7 @@
 ---
 - name: config | Configuring Netdata
   template:
-    src: netdata.conf.j2
+    src: "{{ netdata_config_template }}"
     dest: "{{ netdata_config_file }}"
     owner: "{{ netdata_user_info['user'] }}"
     group: root
